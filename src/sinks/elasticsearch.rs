@@ -82,7 +82,7 @@ pub enum Encoding {
 #[serde(deny_unknown_fields, rename_all = "snake_case", tag = "strategy")]
 pub enum ElasticSearchAuth {
     Basic { user: String, password: String },
-    Aws,
+    Aws { assume_role: Option<String> },
 }
 
 impl ElasticSearchAuth {
@@ -321,9 +321,9 @@ impl ElasticSearchCommon {
 
         let credentials = match &config.auth {
             Some(ElasticSearchAuth::Basic { .. }) | None => None,
-            Some(ElasticSearchAuth::Aws) => {
-                Some(rusoto::AwsCredentialsProvider::new(&region, None)?)
-            }
+            Some(ElasticSearchAuth::Aws { assume_role }) => Some(
+                rusoto::AwsCredentialsProvider::new(&region, assume_role.clone())?,
+            ),
         };
 
         // Only allow compression if we are running with no AWS credentials.

@@ -1,10 +1,10 @@
 ---
+last_modified_on: "2020-06-18"
 title: Data Model
 sidebar_label: hidden
 description: Vector's internal data model -- event and it's subtypes.
 ---
 
-import Jump from '@site/src/components/Jump';
 import SVG from 'react-inlinesvg';
 
 <SVG src="/img/data-model-event.svg" />
@@ -28,8 +28,7 @@ Vector defines subtypes for events. This is necessary to establish domain
 specific requriements enabling interoperability with existing monitoring and
 observability systems.
 
-<Jump to="/docs/about/data-model/log/">Log</Jump>
-<Jump to="/docs/about/data-model/metric/">Metric</Jump>
+
 
 ## FAQ
 
