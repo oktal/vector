@@ -308,7 +308,7 @@ jobs:
       - run: nix-shell --run "make test-integration-splunk"
 
   test-e2e-kubernetes:
-    name: E2E - Linux, Kubernetes
+    name: E2E - Linux, Kubernetes ${{ matrix.kubernetes }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
