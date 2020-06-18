@@ -1693,9 +1693,9 @@ dependencies = [
 
 [[package]]
 name = "hyper"
-version = "0.13.4"
+version = "0.13.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ed6081100e960d9d74734659ffc9cc91daf1c0fc7aceb8eaa94ee1a3f5046f2e"
+checksum = "a6e7655b9594024ad0ee439f3b5a7299369dc2a3f459b47c696f9ff676f9aa1f"
 dependencies = [
  "bytes 0.5.4",
  "futures-channel",
@@ -1707,8 +1707,8 @@ dependencies = [
  "httparse",
  "itoa",
  "log",
- "net2",
  "pin-project",
+ "socket2",
  "time 0.1.42",
  "tokio 0.2.13",
  "tower-service 0.3.0",
@@ -1742,7 +1742,7 @@ dependencies = [
  "antidote",
  "bytes 0.5.4",
  "http 0.2.1",
- "hyper 0.13.4",
+ "hyper 0.13.6",
  "linked_hash_set",
  "once_cell",
  "openssl",
@@ -1771,7 +1771,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3adcd308402b9553630734e9c36b77a7e48b3821251ca2493e8cd596763aafaa"
 dependencies = [
  "bytes 0.5.4",
- "hyper 0.13.4",
+ "hyper 0.13.6",
  "native-tls",
  "tokio 0.2.13",
  "tokio-tls",
@@ -2422,7 +2422,7 @@ version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e14017d204ae062dc5c68a321e3dbdcd9b30181305cb6b067932f7f03f754e27"
 dependencies = [
- "hyper 0.13.4",
+ "hyper 0.13.6",
  "log",
  "metrics-core",
 ]
@@ -3710,7 +3710,7 @@ dependencies = [
  "futures-util",
  "http 0.2.1",
  "http-body 0.3.1",
- "hyper 0.13.4",
+ "hyper 0.13.6",
  "hyper-tls 0.4.1",
  "js-sys",
  "lazy_static",
@@ -3790,7 +3790,7 @@ dependencies = [
  "futures 0.3.4",
  "hmac",
  "http 0.2.1",
- "hyper 0.13.4",
+ "hyper 0.13.6",
  "hyper-tls 0.4.1",
  "lazy_static",
  "log",
@@ -3817,7 +3817,7 @@ dependencies = [
  "chrono",
  "dirs",
  "futures 0.3.4",
- "hyper 0.13.4",
+ "hyper 0.13.6",
  "pin-project",
  "regex",
  "serde",
@@ -3894,7 +3894,7 @@ dependencies = [
  "hex 0.4.2",
  "hmac",
  "http 0.2.1",
- "hyper 0.13.4",
+ "hyper 0.13.6",
  "log",
  "md5",
  "percent-encoding 2.1.0",
@@ -5773,7 +5773,7 @@ dependencies = [
  "hostname",
  "http 0.1.21",
  "http 0.2.1",
- "hyper 0.13.4",
+ "hyper 0.13.6",
  "hyper-openssl 0.8.0",
  "indexmap",
  "inventory",
@@ -5983,7 +5983,7 @@ dependencies = [
  "futures 0.3.4",
  "headers 0.3.2",
  "http 0.2.1",
- "hyper 0.13.4",
+ "hyper 0.13.6",
  "log",
  "mime",
  "mime_guess",
